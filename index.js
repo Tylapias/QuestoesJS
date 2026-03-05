@@ -79,3 +79,66 @@ if (numero > 0) {
 } else {
     console.log("Erro, inválido.");
 }
+
+// Sétima questão ============================================
+
+let soma = 0;
+let numero;
+
+do {
+  numero = Number(prompt("Digite um número (digite 0 para parar):"));
+  soma += numero;
+} while (numero !== 0);
+
+alert("A soma total é: " + soma);
+
+// Oitava questão ============================================
+
+let positivos = 0;
+
+for (let i = 1; i <= 5; i++) {
+  let numero = Number(prompt("Digite um número:"));
+  
+  if (numero > 0) {
+    positivos++;
+  }
+}
+
+alert("Quantidade de números positivos: " + positivos);
+
+// Nona questão ============================================
+
+let usuarioCorreto = "admin";
+let senhaCorreta = "1234";
+
+let tentativas = 0;
+
+while (tentativas < 3) {
+  let usuario = prompt("Digite o usuário:");
+  let senha = prompt("Digite a senha:");
+
+  if (usuario === usuarioCorreto && senha === senhaCorreta) {
+    alert("Login efetuado com sucesso");
+    break;!
+  } else {
+    tentativas++;
+    alert("Usuário e senha incorretos");
+  }
+}
+
+if (tentativas === 3) {
+  alert("Acesso bloqueado.");
+}
+
+// Décima questão ============================================
+
+let numero = Number(prompt("Digite um número inteiro positivo:"));
+let fatorial = 1;
+
+for (let i = 1; i <= numero; i++) {
+  fatorial *= i;
+}
+
+alert("O fatorial de " + numero + " é: " + fatorial);
+
+
